@@ -2,85 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="764eae53-28cc-4cd5-88a7-68d2a65bc667" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/react.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/react_app_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/react_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/preload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/1_webpack_dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/2_layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/3_styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/4_Splash.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/4_menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/5_build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/splash.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/splash.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/actions/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/actions/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/actions/chats.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/actions/connection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/actions/settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/api/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/api/chats.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/api/connection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/AvailableChatsList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/ChatMessagesList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/ChatSearch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/ChatUsersList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/JoinedChatsList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/LoginForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/Messenger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/RegisterForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/shared/BackButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/shared/Loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/shared/Loader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/shared/LoadingView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/shared/ViewTitle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/db/firestore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/layouts/Base.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/reducers/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/reducers/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/reducers/chats.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/reducers/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/reducers/settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/store/StoreProvider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/store/middlewares/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/utils/notifications.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/utils/storage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/utils/time.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/views/Chat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/views/ChatCreate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/views/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/views/Settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/views/Welcome.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/Menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.prod.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/js/SeasonDisplay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/weather_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/weather_app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/updater.js" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/updater.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/js/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/js/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/js/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,10 +76,24 @@
       <option name="presentableId" value="Default" />
       <updated>1607641388287</updated>
       <workItem from="1607641389411" duration="3296000" />
+      <workItem from="1607722158547" duration="4444000" />
     </task>
+    <task id="LOCAL-00001" summary="- base project">
+      <created>1607722360599</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607722360599</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="- base project" />
+    <option name="LAST_COMMIT_MESSAGE" value="- base project" />
   </component>
 </project>

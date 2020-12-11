@@ -14,7 +14,7 @@ autoUpdater.autoDownload = false
 
 module.exports = () => {
   // check for updates (GH Releases)
-  console.log(`Checking for updates`)
+  // console.log(`Checking for updates`)
   // autoUpdater.checkForUpdates()  // this will now log its findings per the configuration
 
   // listen for update available
