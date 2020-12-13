@@ -47,18 +47,41 @@ class App extends React.Component {
     super(props)
     this.state = {
       lat: null,
+      errorMessage: '',
     }
+    setTimeout(()=> {
+      this.setState({lat: 37.774929})
+    }, 2000)
+    window.navigator.geolocation.getCurrentPosition(
+      position => {
+        this.setState({lat: position.coords.latitude})
+      },
+      err => {
+        console.log(`error getting position: `, err)
+        this.setState({lat: position.coords.latitude})
+      }
+  )
   }
+  
+  componentDidMount() {
+    console.log(`my component was rendered to the screen`, )
+  }
+  
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    console.log(`my component was just updated - it reRendered`, )
 
+  }
 
   render() {
     console.log(`calling to get geolocation`,)
-    let location = window.navigator.geolocation.getCurrentPosition(
-      position => console.log(`got position: `, position),
-      err => console.log(`error getting position: `, err))
-
     // return <Latcard>Latitude: {this.state.lat}</Latcard>
-    return <Latcard>LAT HERE: {this.props.lat}</Latcard>
+    return (
+      <Latcard>
+        {this.state.lat ? `Latitude: ${this.state.lat}` : 'SPINNER'}
+        <br/>
+        {this.state.errorMessage ? `Error: ${this.state.errorMessage}` : ""}
+        </Latcard>
+    )
   }
 }
 

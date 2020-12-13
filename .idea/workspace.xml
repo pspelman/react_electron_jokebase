@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="764eae53-28cc-4cd5-88a7-68d2a65bc667" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/js/SeasonDisplay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/weather_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/weather_app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desktop/updater.js" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/updater.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/build/js/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/js/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +74,9 @@
       <updated>1607641388287</updated>
       <workItem from="1607641389411" duration="3296000" />
       <workItem from="1607722158547" duration="4444000" />
+      <workItem from="1607825667460" duration="1130000" />
+      <workItem from="1607827058773" duration="1628000" />
+      <workItem from="1607894027375" duration="1747000" />
     </task>
     <task id="LOCAL-00001" summary="- base project">
       <created>1607722360599</created>
@@ -95,5 +95,44 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="- base project" />
     <option name="LAST_COMMIT_MESSAGE" value="- base project" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-54" y="-1423" key="#Plugins" timestamp="1607894014894">
+      <screen x="-934" y="-2135" width="3840" height="2135" />
+    </state>
+    <state x="-54" y="-1423" key="#Plugins/-934.-2135.3840.2135/2906.-1776.1920.1055/-2014.-1993.1080.1895/0.25.1680.1025@-934.-2135.3840.2135" timestamp="1607894014894" />
+    <state x="304" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607826508590">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="304" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/-934.-2135.3840.2135/2906.-1776.1920.1055/-2014.-1993.1080.1895/0.25.1680.1025@0.25.1680.1025" timestamp="1607826508590" />
+    <state width="544" height="899" key="GridCell.Tab.0.bottom" timestamp="1607827006434">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="544" height="899" key="GridCell.Tab.0.bottom/-934.-2135.3840.2135/2906.-1776.1920.1055/-2014.-1993.1080.1895/0.25.1680.1025@0.25.1680.1025" timestamp="1607827006434" />
+    <state width="544" height="899" key="GridCell.Tab.0.center" timestamp="1607827006432">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="544" height="899" key="GridCell.Tab.0.center/-934.-2135.3840.2135/2906.-1776.1920.1055/-2014.-1993.1080.1895/0.25.1680.1025@0.25.1680.1025" timestamp="1607827006432" />
+    <state width="544" height="899" key="GridCell.Tab.0.left" timestamp="1607827006430">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="544" height="899" key="GridCell.Tab.0.left/-934.-2135.3840.2135/2906.-1776.1920.1055/-2014.-1993.1080.1895/0.25.1680.1025@0.25.1680.1025" timestamp="1607827006430" />
+    <state width="544" height="899" key="GridCell.Tab.0.right" timestamp="1607827006433">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="544" height="899" key="GridCell.Tab.0.right/-934.-2135.3840.2135/2906.-1776.1920.1055/-2014.-1993.1080.1895/0.25.1680.1025@0.25.1680.1025" timestamp="1607827006433" />
+    <state x="589" y="386" key="cloudConfig.PluginsDialog" timestamp="1607826571781">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="589" y="386" key="cloudConfig.PluginsDialog/-934.-2135.3840.2135/2906.-1776.1920.1055/-2014.-1993.1080.1895/0.25.1680.1025@0.25.1680.1025" timestamp="1607826571781" />
+    <state x="722" y="386" width="512" height="303" key="cloudConfig.SelfSettingsDialog" timestamp="1607826561455">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="722" y="386" width="512" height="303" key="cloudConfig.SelfSettingsDialog/-934.-2135.3840.2135/2906.-1776.1920.1055/-2014.-1993.1080.1895/0.25.1680.1025@0.25.1680.1025" timestamp="1607826561455" />
+    <state x="220" y="-1662" width="1532" height="1409" key="search.everywhere.popup" timestamp="1607893979221">
+      <screen x="-934" y="-2135" width="3840" height="2135" />
+    </state>
+    <state x="220" y="-1662" width="1532" height="1409" key="search.everywhere.popup/-934.-2135.3840.2135/2906.-1776.1920.1055/-2014.-1993.1080.1895/0.25.1680.1025@-934.-2135.3840.2135" timestamp="1607893979221" />
+    <state x="505" y="252" width="670" height="676" key="search.everywhere.popup/-934.-2135.3840.2135/2906.-1776.1920.1055/-2014.-1993.1080.1895/0.25.1680.1025@0.25.1680.1025" timestamp="1607826533686" />
   </component>
 </project>
