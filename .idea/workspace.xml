@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="764eae53-28cc-4cd5-88a7-68d2a65bc667" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/js/SeasonDisplay.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/build/js/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/js/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/js/SeasonDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/js/SeasonDisplay.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +82,7 @@
       <workItem from="1607722158547" duration="4444000" />
       <workItem from="1607825667460" duration="1130000" />
       <workItem from="1607827058773" duration="1628000" />
-      <workItem from="1607894027375" duration="1747000" />
+      <workItem from="1607894027375" duration="8987000" />
     </task>
     <task id="LOCAL-00001" summary="- base project">
       <created>1607722360599</created>
@@ -85,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607722360599</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- updated with class component&#10;- added some lifecycle methods &#10;- added basic state">
+      <created>1607900140743</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607900140743</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,7 +107,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="- base project" />
-    <option name="LAST_COMMIT_MESSAGE" value="- base project" />
+    <MESSAGE value="- updated with class component&#10;- added some lifecycle methods &#10;- added basic state" />
+    <option name="LAST_COMMIT_MESSAGE" value="- updated with class component&#10;- added some lifecycle methods &#10;- added basic state" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-54" y="-1423" key="#Plugins" timestamp="1607894014894">
@@ -105,6 +119,10 @@
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
     <state x="304" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/-934.-2135.3840.2135/2906.-1776.1920.1055/-2014.-1993.1080.1895/0.25.1680.1025@0.25.1680.1025" timestamp="1607826508590" />
+    <state x="-85" y="-1581" key="CommitChangelistDialog2" timestamp="1607900140303">
+      <screen x="-934" y="-2135" width="3840" height="2135" />
+    </state>
+    <state x="-85" y="-1581" key="CommitChangelistDialog2/-934.-2135.3840.2135/2906.-1776.1920.1055/-2014.-1993.1080.1895/0.25.1680.1025@-934.-2135.3840.2135" timestamp="1607900140303" />
     <state width="544" height="899" key="GridCell.Tab.0.bottom" timestamp="1607827006434">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
@@ -129,10 +147,15 @@
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
     <state x="722" y="386" width="512" height="303" key="cloudConfig.SelfSettingsDialog/-934.-2135.3840.2135/2906.-1776.1920.1055/-2014.-1993.1080.1895/0.25.1680.1025@0.25.1680.1025" timestamp="1607826561455" />
-    <state x="220" y="-1662" width="1532" height="1409" key="search.everywhere.popup" timestamp="1607893979221">
+    <state x="429" y="350" width="567" height="522" key="find.popup" timestamp="1607958918912">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="46" y="-1459" width="600" height="783" key="find.popup/-934.-2135.3840.2135/2906.-1776.1920.1055/-2014.-1993.1080.1895/0.25.1680.1025@-934.-2135.3840.2135" timestamp="1607907232170" />
+    <state x="429" y="350" width="567" height="522" key="find.popup/0.25.1680.1025@0.25.1680.1025" timestamp="1607958918912" />
+    <state x="220" y="-1662" width="1532" height="1409" key="search.everywhere.popup" timestamp="1607907286815">
       <screen x="-934" y="-2135" width="3840" height="2135" />
     </state>
-    <state x="220" y="-1662" width="1532" height="1409" key="search.everywhere.popup/-934.-2135.3840.2135/2906.-1776.1920.1055/-2014.-1993.1080.1895/0.25.1680.1025@-934.-2135.3840.2135" timestamp="1607893979221" />
+    <state x="220" y="-1662" width="1532" height="1409" key="search.everywhere.popup/-934.-2135.3840.2135/2906.-1776.1920.1055/-2014.-1993.1080.1895/0.25.1680.1025@-934.-2135.3840.2135" timestamp="1607907286815" />
     <state x="505" y="252" width="670" height="676" key="search.everywhere.popup/-934.-2135.3840.2135/2906.-1776.1920.1055/-2014.-1993.1080.1895/0.25.1680.1025@0.25.1680.1025" timestamp="1607826533686" />
   </component>
 </project>

@@ -1,5 +1,10 @@
+import "semantic-ui-css/semantic.min.css";
+
 import React from 'react'
 import ReactDOM from 'react-dom'
+import SeasonDisplay from "./SeasonDisplay";
+// import "semantic-ui-css/semantic.min.css";
+
 
 // import App from "./App"
 
@@ -20,11 +25,10 @@ const Latcard = (props) =>  {
   return (
     <div className="ui card">
       <div className="image">
-        {/*<img src="/images/avatar2/large/kristy.png">*/}
-        {/*{props}*/}
+        {/*<img src="/images/avatar2/large/kristy.png" />*/}
       </div>
       <div className="content">
-        <a className="header">Kristy</a>
+        <a className="header">Season</a>
         <div className="meta">
           <span className="date">Joined in 2013</span>
         </div>
@@ -42,6 +46,10 @@ const Latcard = (props) =>  {
   )
 }
 
+
+const newZealandLat = 40.9006  // 40.9006° S, 174.8860° E
+const seattleLat = 47.6062  // 47.6062° N, 122.3321° W
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -49,38 +57,28 @@ class App extends React.Component {
       lat: null,
       errorMessage: '',
     }
-    setTimeout(()=> {
-      this.setState({lat: 37.774929})
-    }, 2000)
-    window.navigator.geolocation.getCurrentPosition(
-      position => {
-        this.setState({lat: position.coords.latitude})
-      },
-      err => {
-        console.log(`error getting position: `, err)
-        this.setState({lat: position.coords.latitude})
-      }
-  )
   }
-  
-  componentDidMount() {
-    console.log(`my component was rendered to the screen`, )
-  }
-  
-  componentDidUpdate(prevProps, prevState, snapshot) {
-    console.log(`my component was just updated - it reRendered`, )
 
+  componentDidMount() {
+    setTimeout(()=> {
+      this.setState({lat: newZealandLat})
+    }, 3000)
+    window.navigator.geolocation.getCurrentPosition(
+      position => this.setState({lat: position.coords.latitude}),
+        err => this.setState({errorMessage: err},));
   }
+
 
   render() {
     console.log(`calling to get geolocation`,)
     // return <Latcard>Latitude: {this.state.lat}</Latcard>
     return (
-      <Latcard>
-        {this.state.lat ? `Latitude: ${this.state.lat}` : 'SPINNER'}
-        <br/>
-        {this.state.errorMessage ? `Error: ${this.state.errorMessage}` : ""}
-        </Latcard>
+      <SeasonDisplay lat={this.state.lat} />
+      // <Latcard>
+      //   {this.state.lat ? `Latitude: ${this.state.lat}` : 'SPINNER'}
+      //   <br/>
+      //   {this.state.errorMessage ? `Error: ${this.state.errorMessage}` : ""}
+      //   </Latcard>
     )
   }
 }

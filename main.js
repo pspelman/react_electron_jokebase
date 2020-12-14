@@ -65,6 +65,14 @@ function createWindow() {
 }
 
 app.whenReady().then(() => {
+  // close other windows
+  if (mainWindow) {
+    const allWindows = mainWindow.BrowserWindow.getAllWindows();
+    console.log(`all windows: `, allWindows.length)
+    console.log(`calling mainWindow.exit()`, )
+    mainWindow.exit()
+
+  }
 
   createWindow()
   // const notification = new Notification({title: 'Welcome', body: 'You\'re online'})
@@ -86,14 +94,15 @@ app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit()
 })
 
+
 // When app icon is clicked and app is running, (macOS) recreate the BrowserWindow
 app.on('activate', () => {
-  if (mainWindow === null) {
-    createWindow()
-    return
-  }
-  if (BrowserWindow.getAllWindows().length === 0) {
-    createWindow()
-  }
+  // if (mainWindow === null) {
+  //   createWindow()
+  //   return
+  // }
+  // if (BrowserWindow.getAllWindows().length === 0) {
+  //   createWindow()
+  // }
 })
 
