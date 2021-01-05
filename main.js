@@ -57,7 +57,7 @@ function createWindow() {
   state.manage(mainWindow)
 
   // load the compiled frontend
-  mainWindow.loadFile('./frontend/index.html')
+  mainWindow.loadFile('./frontend/public/index.html')
 
   if (isDev) mainWindow.webContents.openDevTools();
   mainWindow.on('closed', () => mainWindow = null)

@@ -4,7 +4,7 @@ const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   mode: 'development',
-  entry: './frontend/src/js/index.js',  // this is the file we want to compile
+  entry: './frontend/src/index.js',  // this is the file we want to compile
   devtool: 'inline-cheap-source-map',
   target: 'electron-renderer',
   module: {

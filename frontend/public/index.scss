@@ -26,6 +26,7 @@ $brand-google: #ea4335 !default;
 $brand-facebook: #3b5998 !default;
 
 
+
 .content-wrapper {
   height: 100%;
   background-color: $gray-200;
@@ -66,6 +67,7 @@ $brand-facebook: #3b5998 !default;
     flex-direction: row;
     justify-content: space-between;
 
+
     &-left {
       display: flex;
     }
@@ -81,3 +83,43 @@ $brand-facebook: #3b5998 !default;
     }
   }
 }
+
+
+.icon-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.icon-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.season-display {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #4e73df;
+  flex-direction: column;
+}
+
+.winter {
+  background-color: aliceblue;
+}
+
+.summer {
+  background-color: orange;
+}
+
+.season-display.winter {
+  color: blue;
+}
+
+.season-display.summer {
+  color: red;
+}
+

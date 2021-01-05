@@ -12,12 +12,14 @@
     "watch": "nodemon --exec electron -e js,jade,html,css ."
   },
   "devDependencies": {
+    "@babel/plugin-syntax-class-properties": "^7.12.1",
     "electron-builder": "^22.9.1",
     "electron-notarize": "^1.0.0",
     "nodemon": "^2.0.6"
   },
   "dependencies": {
     "@babel/core": "^7.12.9",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/preset-env": "^7.12.7",
     "@babel/preset-react": "^7.12.7",
     "@hot-loader/react-dom": "^17.0.1",
@@ -38,6 +40,7 @@
     "react-redux": "^7.2.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.1",
     "redux": "^4.0.5",
     "sass": "^1.29.0",
     "sass-loader": "^10.1.0",
@@ -46,5 +49,13 @@
     "url-loader": "^4.1.1",
     "webpack": "^5.10.0",
     "webpack-cli": "^4.2.0"
-  }
+  },
+  "plugins": [
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ]
+  ]
 }

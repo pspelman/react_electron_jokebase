@@ -3,6 +3,7 @@ import "semantic-ui-css/semantic.min.css";
 import React from 'react'
 import ReactDOM from 'react-dom'
 import SeasonDisplay from "./js/SeasonDisplay";
+import Spinner from "./js/components/Spinner";
 // import "semantic-ui-css/semantic.min.css";
 
 
@@ -79,19 +80,6 @@ class App extends React.Component {
     }
   }
 
-  //  updateLocation = () => {
-  //   console.log(`trying to update location!`, )
-  //   window.navigator.geolocation.getCurrentPosition(
-  //     (position) => {
-  //       console.log(`got the current location! `, position)
-  //       this.setState({lat: position.coords.latitude})
-  //     },
-  //     (err) => {
-  //       console.log(`error getting geolocation: `, err)
-  //       this.setState({errorMessage: err.message})
-  //     })
-  // }
-
   componentDidMount() {
     // setTimeout(()=> {  // this was for spoofing the geolocation - not working for electron
     //   // this.setState({lat: newZealandLat})
@@ -108,15 +96,24 @@ class App extends React.Component {
   render() {
 
     console.log(`calling to get geolocation`,)
+    if (this.state.errorMessage && !this.state.lat) {
+      return <div>Error: {this.state.errorMessage}</div>
+    }
+
+    if (!this.state.errorMessage && this.state.lat) {
+      return <SeasonDisplay updateLocation={this.updateLocation} lat={this.state.lat}/>
+    }
+
+    return <Spinner message={"loading location..."}/>
     // return <Latcard>Latitude: {this.state.lat}</Latcard>
-    return (
-      <SeasonDisplay updateLocation={this.updateLocation} lat={this.state.lat}/>
-      // <Latcard>
-      //   {this.state.lat ? `Latitude: ${this.state.lat}` : 'SPINNER'}
-      //   <br/>
-      //   {this.state.errorMessage ? `Error: ${this.state.errorMessage}` : ""}
-      //   </Latcard>
-    )
+    // return (
+    //   <SeasonDisplay updateLocation={this.updateLocation} lat={this.state.lat}/>
+    //   // <Latcard>
+    //   //   {this.state.lat ? `Latitude: ${this.state.lat}` : 'SPINNER'}
+    //   //   <br/>
+    //   //   {this.state.errorMessage ? `Error: ${this.state.errorMessage}` : ""}
+    //   //   </Latcard>
+    // )
   }
 }
 

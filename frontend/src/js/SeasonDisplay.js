@@ -1,4 +1,5 @@
 import React from 'react'
+import Spinner from "./components/Spinner";
 
 const getSeason = (lat, month) => {
   console.log(`getting the season for lat ${lat} in month ${month}`, )
@@ -21,7 +22,7 @@ const seasonConfig = {
   }
 }
 
-const SeasonDisplay = (props) => {
+const SeasonDisplay = props => {
   console.log(`the current season: `, getSeason(props.lat, new Date().getMonth()))
   const season = props.lat ? getSeason(props.lat, new Date().getMonth()) : ''
 
@@ -36,6 +37,7 @@ const SeasonDisplay = (props) => {
       {season ? <i className={`icon-left massive ${seasonConfig[season].iconName} icon`} style={iconStyle} /> : ''}
       <br/>
       <button className={'btn'} onClick={props.updateLocation}>Update Location</button>
+      <br/>
       {props.lat ? seasonConfig[season].text : 'SPINNER'}
       <div className="content">
         {/*<a className="header">*/}
@@ -53,7 +55,7 @@ const SeasonDisplay = (props) => {
       </div>
       {season ? <i className={`icon-right massive ${seasonConfig[season].iconName} icon`} style={iconStyle} /> : ''}
     </div>
-  )
+  );
 }
 
 export default SeasonDisplay
