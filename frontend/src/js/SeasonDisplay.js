@@ -35,6 +35,7 @@ const SeasonDisplay = (props) => {
     <div className={`season-display ${season}`}>
       {season ? <i className={`icon-left massive ${seasonConfig[season].iconName} icon`} style={iconStyle} /> : ''}
       <br/>
+      <button className={'btn'} onClick={props.updateLocation}>Update Location</button>
       {props.lat ? seasonConfig[season].text : 'SPINNER'}
       <div className="content">
         {/*<a className="header">*/}

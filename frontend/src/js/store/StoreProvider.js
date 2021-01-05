@@ -4,7 +4,7 @@ import {applyMiddleware, combineReducers, createStore} from "redux";
 import appReducer from '../reducers/app';
 import settingsReducer from '../reducers/settings';
 
-import configureStore from '../store';
+import configureStore from './index';
 // const store = configureStore();
 // const store = createStore
 // const rootReducer = combineReducers({
