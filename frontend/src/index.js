@@ -83,17 +83,16 @@ class App extends React.Component {
     console.log(`going to get the jokes`,)
   }
 
-  renderJokes = (jokes) => {
-    jokes.map(joke => {
-      return (
-        <div>
-          {joke.punchline}
-        </div>
-      )
-    })
-  }
-
   render() {
+    const renderJokes = (jokes) => {
+      jokes.map(joke => {
+        return (
+          <div>
+            {joke.punchline}
+          </div>
+        )
+      })
+    }
 
     {
       if (this.state.jokes) {
