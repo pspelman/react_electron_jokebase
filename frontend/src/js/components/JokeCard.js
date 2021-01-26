@@ -1,27 +1,31 @@
 import React from "react";
 
 const JokeCard = (props) => {
-
+	const {punchline, author, date, id} = props.joke
 	return (
-		<div className="ui card">
+		<div className="ui card"
+		     key={id}
+		>
 			<div className="image">
-				card image goes here
+				joke image goes here
 			</div>
 			<div className="content">
-				<a className="header">Season</a>
+				<a className="header">
+					{author}
+				</a>
 				<div className="meta">
 					<span className="date">
-						Joke date-a goes here
+						Written: {date}
 					</span>
 				</div>
 				<div className="description">
-					{props.children}
+					{punchline}
 				</div>
 			</div>
 			<div className="extra content">
 				<a>
 					<i className="user icon"></i>
-					22 Joke Friends
+					22 Joke Lovers
 				</a>
 			</div>
 		</div>

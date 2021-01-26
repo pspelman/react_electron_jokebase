@@ -19,11 +19,13 @@ const handleGeolocationUpdate = pos => {
 
 const allJokes = [
     {
+      id: 1,
       punchline: 'this is a joke',
       author: 'Anonymous',
       date: 'Earlier'
     },
     {
+      id: 2,
       punchline: 'this is not a joke - it is a sentence.',
       author: 'Phil',
       date: 'Once ago'

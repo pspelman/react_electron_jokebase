@@ -7,10 +7,10 @@ import JokeCard from "./JokeCard";
 
 class JokeList extends Component {
 
-	renderJokelist() {
+	renderJokeList() {
 		// get the jokes from Redux
 		// return a set of joke cards
-		this.props.jokes.map(joke => {
+		return this.props.jokes.map(joke => {
 			return <JokeCard joke={joke}/>
 		})
 	}
@@ -24,7 +24,7 @@ class JokeList extends Component {
 		return (
 			<div>
 				<ViewTitle text={"the jokez"}/>
-
+				{this.props.jokes && this.renderJokeList()}
 			</div>
 		);
 	}
