@@ -17,6 +17,18 @@ const handleGeolocationUpdate = pos => {
   return pos
 }
 
+const allJokes = [
+    {
+      punchline: 'this is a joke',
+      author: 'Anonymous',
+      date: 'Earlier'
+    },
+    {
+      punchline: 'this is not a joke - it is a sentence.',
+      author: 'Phil',
+      date: 'Once ago'
+    },
+  ]
 
 class App extends Component {
   constructor(props) {
@@ -33,10 +45,7 @@ class App extends Component {
       // this.setState({lat: newZealandLat})
       console.log(`trying to get geolocation latitude `,)
       this.setState({
-        jokes: [{
-          punchline: 'this is a joke',
-          author: 'Anonymous'
-        }]
+        jokes: [...allJokes]
       })
     }, 3000)
     // console.log(`getting geolocation (hopefully)`,)
@@ -45,15 +54,6 @@ class App extends Component {
   }
 
   render() {
-    const renderJokes = (jokes) => {
-      jokes.map(joke => {
-        return (
-          <div>
-            {joke.punchline}
-          </div>
-        )
-      })
-    }
 
     {
       if (this.state.jokes) {

@@ -1,6 +1,7 @@
 import React from "react";
 
 const JokeCard = (props) => {
+
 	return (
 		<div className="ui card">
 			<div className="image">
@@ -26,3 +27,5 @@ const JokeCard = (props) => {
 		</div>
 	)
 }
+
+export default JokeCard
