@@ -97,7 +97,7 @@ $brand-facebook: #3b5998 !default;
   right: 10px;
 }
 
-.season-display {
+.joke-display {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -115,11 +115,11 @@ $brand-facebook: #3b5998 !default;
   background-color: orange;
 }
 
-.season-display.winter {
+.joke-display.winter {
   color: blue;
 }
 
-.season-display.summer {
+.joke-display.summer {
   color: red;
 }
 
