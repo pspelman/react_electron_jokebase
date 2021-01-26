@@ -1,7 +1,7 @@
 {
-  "name": "new_app",
+  "name": "jokes_base",
   "version": "1.0.0",
-  "description": "new_app description",
+  "description": "jokes_base is the base project for building out our jokes app",
   "main": "main.js",
   "author": "Philip Spelman",
   "license": "MIT",

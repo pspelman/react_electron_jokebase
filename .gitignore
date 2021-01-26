@@ -81,8 +81,10 @@ fabric.properties
 # testing
 /coverage
 
+.idea
 # production
 /build
+/frontend/build/
 /frontend/build
 
 

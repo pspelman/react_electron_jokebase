@@ -57,63 +57,55 @@ const handleGeolocationUpdate = pos => {
 }
 
 
-
-
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       lat: null,
       errorMessage: '',
-    }
-    this.updateLocation = () => {
-      console.log(`trying to update location!`, )
-      window.navigator.geolocation.getCurrentPosition(
-        (position) => {
-          console.log(`got the current location! `, position)
-          this.setState({lat: position.coords.latitude})
-        },
-        (err) => {
-          console.log(`error getting geolocation: `, err)
-          this.setState({errorMessage: err.message})
-        })
+      jokes: null
     }
   }
 
   componentDidMount() {
-    // setTimeout(()=> {  // this was for spoofing the geolocation - not working for electron
-    //   // this.setState({lat: newZealandLat})
-    //   console.log(`trying to get geolocation latitude `, )
-    //   this.setState({lat: window.navigator.geolocation.getCurrentPosition(pos => {
-    //       console.log(`got geolocation: `, pos)
-    //       return pos.latitude
-    //     })})
-    // }, 3000)
-    console.log(`getting geolocation (hopefully)`,)
-    this.updateLocation();
+    setTimeout(() => {  // this was for spoofing the geolocation - not working for electron
+      // this.setState({lat: newZealandLat})
+      console.log(`trying to get geolocation latitude `,)
+      this.setState({
+        jokes: [{
+          punchline: 'this is a joke',
+          author: 'Anonymous'
+        }]
+      })
+    }, 3000)
+    // console.log(`getting geolocation (hopefully)`,)
+    // this.updateLocation();
+    console.log(`going to get the jokes`,)
+  }
+
+  renderJokes = (jokes) => {
+    jokes.map(joke => {
+      return (
+        <div>
+          {joke.punchline}
+        </div>
+      )
+    })
   }
 
   render() {
 
-    console.log(`calling to get geolocation`,)
-    if (this.state.errorMessage && !this.state.lat) {
-      return <div>Error: {this.state.errorMessage}</div>
+    {
+      if (this.state.jokes) {
+        return (
+          <div>
+            These are be jokes
+          </div>
+        )
+      }
     }
 
-    if (!this.state.errorMessage && this.state.lat) {
-      return <SeasonDisplay updateLocation={this.updateLocation} lat={this.state.lat}/>
-    }
-
-    return <Spinner message={"loading location..."}/>
-    // return <Latcard>Latitude: {this.state.lat}</Latcard>
-    // return (
-    //   <SeasonDisplay updateLocation={this.updateLocation} lat={this.state.lat}/>
-    //   // <Latcard>
-    //   //   {this.state.lat ? `Latitude: ${this.state.lat}` : 'SPINNER'}
-    //   //   <br/>
-    //   //   {this.state.errorMessage ? `Error: ${this.state.errorMessage}` : ""}
-    //   //   </Latcard>
-    // )
+    return <Spinner message={"loading jokes..."}/>
   }
 }
 
