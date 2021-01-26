@@ -22,7 +22,7 @@ const seasonConfig = {
   }
 }
 
-const SeasonDisplay = props => {
+const JokeDisplay = props => {
   console.log(`the current season: `, getSeason(props.lat, new Date().getMonth()))
   const season = props.lat ? getSeason(props.lat, new Date().getMonth()) : ''
 
@@ -40,17 +40,10 @@ const SeasonDisplay = props => {
       <br/>
       {props.lat ? seasonConfig[season].text : 'SPINNER'}
       <div className="content">
-        {/*<a className="header">*/}
-        {/*  {props.lat ? seasonConfig[season].text : 'SPINNER'}*/}
-        {/*</a>*/}
         <span className="date">{new Date().toDateString()}</span>
         <br/>
-        <div className="meta">
-          <span className="date">{new Date().toDateString()}</span>
-        </div>
         <div className="description">
           Current Latitude: {props.lat ? `Latitude: ${props.lat}` : 'SPINNER'}
-          {/*{seasonIcon('icon-right')}*/}
         </div>
       </div>
       {season ? <i className={`icon-right massive ${seasonConfig[season].iconName} icon`} style={iconStyle} /> : ''}
@@ -58,4 +51,9 @@ const SeasonDisplay = props => {
   );
 }
 
-export default SeasonDisplay
+// Todo: add the joke date later
+//         <div className="meta">
+//           <span className="date">{new Date().toDateString()}</span>
+//         </div>
+
+export default JokeDisplay
