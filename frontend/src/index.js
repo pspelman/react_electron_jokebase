@@ -4,6 +4,7 @@ import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import JokeDisplay from "./js/JokeDisplay";
 import Spinner from "./js/components/Spinner";
+import JokeList from "./js/components/JokeList";
 // import "semantic-ui-css/semantic.min.css";
 
 
@@ -56,11 +57,7 @@ class App extends Component {
 
     {
       if (this.state.jokes) {
-        return (
-          <div>
-            These are be jokes
-          </div>
-        )
+        return <JokeList jokes={this.state.jokes} />
       }
     }
 
