@@ -48,3 +48,8 @@ h1 {
     height: 100vh;
     width: 100vw;
 }
+
+.electron-app-name-container {
+    font-size: 25px;
+    color:#f69839;
+}

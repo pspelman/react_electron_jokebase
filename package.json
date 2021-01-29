@@ -9,7 +9,7 @@
     "start": "electron .",
     "debug": "electron --inspect=5858 .",
     "packwatch": "webpack --config webpack.common.js --watch",
-    "watch": "nodemon --exec electron -e js,jade,html,css ."
+    "watch": "nodemon --exec electron -e js,jade,html,css,scss,sass ."
   },
   "devDependencies": {
     "@babel/plugin-syntax-class-properties": "^7.12.1",

@@ -9,9 +9,6 @@ import JokeList from "./js/components/JokeList";
 
 
 
-const newZealandLat = 40.9006  // 40.9006° S, 174.8860° E
-const seattleLat = 47.6062  // 47.6062° N, 122.3321° W
-
 const handleGeolocationUpdate = pos => {
   console.log(`got geolocation update: `, pos);
   return pos
@@ -41,6 +38,7 @@ class App extends Component {
       jokes: null
     }
   }
+
 
   componentDidMount() {
     setTimeout(() => {  // this was for spoofing the geolocation - not working for electron
