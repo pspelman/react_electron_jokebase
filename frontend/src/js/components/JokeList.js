@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import ViewTitle from "./shared/ViewTitle";
 import Spinner from "./Spinner";
 import JokeCard from "./JokeCard";
+import BigButton from "./shared/BigButton";
 
 
 
@@ -25,6 +26,8 @@ class JokeList extends Component {
 			<div>
 				<ViewTitle text={"the jokez"}/>
 				{this.props.jokes && this.renderJokeList()}
+				<BigButton/>			{/*	that's my save button*/}
+
 			</div>
 		);
 	}
