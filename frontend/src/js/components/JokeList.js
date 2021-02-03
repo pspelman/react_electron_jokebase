@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import ViewTitle from "./shared/ViewTitle";
 import Spinner from "./Spinner";
 import JokeCard from "./JokeCard";
-import BigButton from "./shared/BigButton";
+import Button from "./shared/Button";
 
 
 
@@ -12,7 +12,7 @@ class JokeList extends Component {
 		// get the jokes from Redux
 		// return a set of joke cards
 		return this.props.jokes.map(joke => {
-			return <JokeCard joke={joke}/>
+			return <JokeCard joke={joke} key={joke.id}/>
 		})
 	}
 
@@ -32,5 +32,6 @@ class JokeList extends Component {
 		);
 	}
 }
-
+// 				<SaveButton/>
+// 				<EditButton/>
 export default JokeList

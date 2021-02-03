@@ -53,7 +53,7 @@ class App extends Component {
       this.setState({
         jokes: [...allJokes]
       })
-    }, 3000)
+    }, 500)
     // console.log(`getting geolocation (hopefully)`,)
     // this.updateLocation();
     console.log(`going to get the jokes`,)
