@@ -27,6 +27,12 @@ const allJokes = [
       author: 'Phil',
       date: 'Once ago'
     },
+  {
+    id: 3,
+    punchline: 'My workout plan',
+    author: 'Tom',
+    date: 'Once ago'
+  }
   ]
 
 class App extends Component {
