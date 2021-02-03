@@ -8,7 +8,7 @@ const BigButton = () => {
   //    TEXT ON THE FUCKING BUTTON
     return (
         <React.Fragment>
-          <div className={'big-button'}>
+          <div className={'ui secondary button big-button'}>
             I am a big button for SAVING
           </div>
         </React.Fragment>
